@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model and Effects</title>
+  <style>
+    /* 1. Understanding the Box Model Example */
+    .box-model-example {
+      padding: 15px;
+      border: 2px solid #3498db;
+      margin: 20px;
+      width: 300px;
+    }
+
+    /* 2. Practical Application */
+    .practical-box {
+      padding: 15px;
+      border: 2px solid #3498db;
+      margin: 20px;
+      width: 300px;
+    }
+
+    /* 3. Box-Shadow Manipulation */
+    .box-shadow-example {
+      width: 300px;
+      height: 150px;
+      padding: 15px;
+      border: 2px solid #3498db;
+      margin: 20px;
+      box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* 4. Debugging CSS Box Model Issues */
+    .element {
+      width: 100%;
+      padding: 20px;
+      border: 5px solid;
+      box-sizing: border-box; 
+    }
+
+    /* 5. Advanced Customization - Card Component with Hover */
+    .card {
+      padding: 20px;
+      border: 1px solid gray;
+      width: 300px;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Understanding the Box Model -->
+  <div class="box-model-example">
+    Box Model Example
+  </div>
+
+  <!-- 2. Practical Application -->
+  <div class="practical-box">
+    Practical Application Box
+  </div>
+
+  <!-- 3. Box-Shadow Manipulation -->
+  <div class="box-shadow-example">
+    Box Shadow Example
+  </div>
+
+  <!-- 4. Debugging CSS Box Model Issues -->
+  <div class="element">
+    This element uses box-sizing to avoid overflow issues.
+  </div>
+
+  <!-- 5. Advanced Customization - Card Component with Hover -->
+  <div class="card">
+    Hover over this card to see the shadow effect.
+  </div>
+
+</body>
+</html>
